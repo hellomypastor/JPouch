@@ -4,7 +4,7 @@ Java集合工具包位于Java.util包下，包含了很多常用的数据结构�
 
 Java集合类的整体框架如下：
 
-![](images/jdk-collection.png)
+![](images/00 jdk-collection-summary/jdk-collection.png)
 
 从上图中可以看出，集合类主要分为两大类：`Collection`和`Map`。
 
