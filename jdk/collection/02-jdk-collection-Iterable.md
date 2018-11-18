@@ -34,7 +34,7 @@ public class IterableTest {
 }
 ```
 
-此外我们还可以使用"for-each loop”形式进行遍历，增强 for 形式在 Java 中只是一个语法糖，实际编译的时候，还是会转换为迭代器形式，上面方法体可以改成：
+此外我们还可以使用 for-each loop 形式进行遍历，增强 for 形式在 Java 中只是一个语法糖，实际编译的时候，还是会转换为迭代器形式，上面方法体可以改成：
 
 ```java
 for (Integer integer : list) {
@@ -42,7 +42,7 @@ for (Integer integer : list) {
 }
 ```
 
-进行迭代遍历的时候我们需要注意这种情况，就是在遍历的过程中，如果我们对元素进行添加删除，那么会造成并行修改异常(ConcurrentModificationException)，如下：
+进行迭代遍历的时候我们需要注意这种情况，就是在遍历的过程中，如果我们对元素进行添加删除，那么会造成并行修改异常 ConcurrentModificationException，如下：
 
 ```java
 Iterator<Integer> iterator = list.iterator();
@@ -69,13 +69,13 @@ while (iterator.hasNext()) {
 }
 ```
 
-还有一点需要注意，我们在用迭代删除(Iterator.remove())时，可能会因为没有执行“it.next()”， 抛出java.lang.IllegalStateException 异常，原因是通过 Iterator 来删除集合中某一个元素时，首先需要使用 next 方法迭代出集合中的元素 ，然后才能调用 remove 方法，否则集合可能会因为对同一个 Iterator remove 了多次而抛出 java.lang.IllegalStateException 异常，如下：
+还有一点需要注意，我们在用迭代删除 Iterator.remove() 时，可能会因为没有执行 next() ， 抛出java.lang.IllegalStateException 异常，原因是通过 Iterator 来删除集合中某一个元素时，首先需要使用 next 方法迭代出集合中的元素 ，然后才能调用 remove 方法，否则集合可能会因为对同一个 Iterator remove 了多次而抛出 java.lang.IllegalStateException 异常，如下：
 
 ```java
 Iterator<Integer> iterator = list.iterator();
 while (iterator.hasNext()) {
     //第二次会抛java.lang.IllegalStateException异常
-	iterator.remove();
+    iterator.remove();
 }
 ```
 
