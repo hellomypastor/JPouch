@@ -1,5 +1,7 @@
 ### Collection
 
+------
+
 Collection 继承了 Iterable接口，包含了集合的基本操作。
 
 ### 接口定义

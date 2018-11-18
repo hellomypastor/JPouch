@@ -1,5 +1,7 @@
 ### Iterable
 
+------
+
 Iterable 接口是 Java 集合框架的顶级接口，实现此接口使集合对象可以通过迭代器 Iterator 遍历自身元素，Iterable 最早出现在 JDK 1.5。
 
 ### 接口定义

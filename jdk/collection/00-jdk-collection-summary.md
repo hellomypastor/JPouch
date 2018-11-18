@@ -1,5 +1,7 @@
 ### Java集合总览
 
+------
+
 Java 集合工具包位于 Java.util 包下，包含了很多常用的数据结构，如数组、链表、栈、队列、集合、哈希表等。学习Java集合框架下大致可以分为如下五个部分：List 列表、Set 集合、Map 映射、迭代器（Iterator、Enumeration）、工具类（Arrays、Collections）。
 
 Java集合类的整体框架如下：

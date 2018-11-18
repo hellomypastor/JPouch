@@ -1,5 +1,7 @@
 ### AbstractCollection
 
+------
+
 AbstractCollection 是 Java 集合框架中 Collection 接口的一个直接实现类， Collection 下的大多数子类都继承 AbstractCollection ，比如 List 的实现类，Set 的实现类。
 
 它实现了一些方法，也定义了几个抽象方法留给子类实现，因此它是一个抽象类。
